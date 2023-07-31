@@ -1,0 +1,58 @@
+<html>
+<head>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <script src="js/XHRService.js"></script>
+
+</head>
+<body>
+    <form method="post" action="http://localhost:5118/api/NailServices" enctype="multipart/form-data">
+        <div class="form-group">
+            <input type="file" name="File" class="form-control" />
+        </div>
+<br><br>
+        <div class="form-group">
+            <label>ServiceName</label>
+            <input  type="text" name="Name" class="form-control" placeholder="Enter ServiceName" />
+            <!--<span asp-validation-for="@Model.ServiceName"></span>-->
+        </div>
+<br><br>
+        <div class="form-group">
+            <label >Price</label>
+            <input  type="text" name="Price" class="form-control" placeholder="Enter Price" />
+                    </div>
+<br><br>
+        <input type="submit" value="Save" />
+        <br>
+
+    </form>
+
+
+
+    <!--<script>
+
+
+
+        function getProducts() {
+
+            alert('tHISSSSS');
+            get("http://localhost:5118/api/Products")
+            //var xhr = new XMLHttpRequest();
+            //xhr.withCredentials = true;
+
+            //xhr.addEventListener("readystatechange", function () {
+            //    if (this.readyState === 4) {
+            //        var res = JSON.parse(this.responseText);
+            //        LoadProducts(res);
+            //    }
+            //});
+
+            //xhr.open("GET", "http://localhost:5118/api/Products");
+
+            //xhr.send();
+
+        }
+
+
+    </script>-->
+</body>
+</html>
